@@ -48,7 +48,9 @@ air_calligraphy_mediapipe/
 
 ## 环境依赖安装
 ```bash
-pip install opencv-python mediapipe numpy
+# 一键安装全部项目依赖
+pip install -r requirements.txt
+
 ```
 
 ## 运行前置准备
@@ -66,6 +68,12 @@ python main.py
 4. 5秒无手部动作自动清空画布
 5. 留有笔迹闲置5秒自动保存作品至 `output_calligraphy`
 6. 按下键盘 Q 键关闭程序
+
+
+## 运行说明
+1.复制项目根目录的 config.example.yaml，重命名为 config.yaml
+2.修改文件内的手部检测灵敏度、画笔粗细、墨水浓度、摄像头编号等参数
+3.程序启动会自动读取自定义配置，无需修改 src 源码硬编码参数
 
 ## 演示视频说明
 所有演示视频存放于根目录 `demo_videos` 文件夹，视频文件体积较大，默认配置不提交至GitHub仓库。
@@ -91,3 +99,21 @@ python main.py
 
 ## 项目退出方式
 运行窗口下按下 `Q` 键正常关闭程序，自动释放相机、关闭跟踪检测器、销毁所有窗口。
+
+## 单元测试
+#执行tests目录下所有检测器单元用例
+```bash
+pytest tests/ -v
+
+## 版权 & 开源说明
+
+This project is open source under MIT License.
+See the LICENSE file in the repository root for full license terms.
+Copyright (c) 2026 Tianbi7
+
+
+
+
+
+
+
