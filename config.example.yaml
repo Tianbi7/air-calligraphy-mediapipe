@@ -1,0 +1,10 @@
+# 手部检测参数
+max_hands: 1
+min_detect_conf: 0.7
+# 水墨渲染参数
+brush_size: 8
+ink_density: 0.8
+# 输出保存路径
+output_dir: "./output_calligraphy"
+# 摄像头设备ID
+cam_id: 0
